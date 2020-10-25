@@ -1,7 +1,7 @@
 let statsYear = 2020;
 
 const request = async () => {
-    let response = await fetch ('http://ergast.com/api/f1/' + statsYear + '.json');
+    let response = await fetch ('https://ergast.com/api/f1/' + statsYear + '.json');
     let json = await response.json();
     return json;
 }
